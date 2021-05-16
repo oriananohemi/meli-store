@@ -10,9 +10,11 @@ const Header = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         let input = e.target["query"];
-        const url = `/items?seach=${input.value}`;
-        input.value = ''
-        history.push(url);
+        if(input.value !== '') {
+            const url = `/items?seach=${input.value}`;
+            input.value = ''
+            history.push(url);
+        }
     }
 
     return (
@@ -21,7 +23,7 @@ const Header = () => {
                 <img src={brand} alt="Meli logo" />
             </Link>
                 <form className="center-container header__search-container" onSubmit={handleSubmit}>
-                    <input className="header__input" name="query" type="text" placeholder="Nunca dejes de buscar" />
+                    <input className="header__input" name="query" type="text" placeholder="Nunca dejes de buscar" required/>
                     <button className="header__search">
                         <img src={search} alt="Buscador" />
                     </button>
