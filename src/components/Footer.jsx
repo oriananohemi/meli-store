@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
-
+        <footer className="footer">
+            <a href="https://github.com/oriananohemi" target="_blank">oriananohemi</a>
         </footer>
     )
 }
