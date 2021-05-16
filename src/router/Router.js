@@ -1,17 +1,22 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 import Home from '../pages/Home'
 import Details from '../pages/Details'
 import Results from '../pages/Results'
 
 const Router = () => (
   <BrowserRouter>
+    <Header/>
     <Switch>
-      <Route exact path="/" component={ Home } />
-      <Route exact path="/list" component={ Results } />
-      <Route exact path="/details" component={ Details } />
+      <Route exact path="/"><Home /></Route>
+      <Route exact path="/items"><Results /></Route>
+      <Route exact path="/items:id"><Details /></Route>
     </Switch>
+    <Footer/>
   </BrowserRouter>
 );
 
