@@ -1,0 +1,21 @@
+.button--small--blue {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+    margin: calc(2 * var(--relative-size)) 0;
+    padding: var(--relative-size);
+    width: 20%;
+}
+
+.button--big--blue {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--white-color);
+    margin: calc(2 * var(--relative-size)) 0;
+    padding: var(--relative-size);
+    width: 50%;
+}
