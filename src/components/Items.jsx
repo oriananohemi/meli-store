@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 const Items = ({id, title, picture, price, free_shipping, address, condition}) => {
     const history = useHistory()
     const handleClick = (id) => {
-        history.push(`/items/${id}`)
+        history.push(`/items${id}`)
     }
     
     return (
