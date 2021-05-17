@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/meli-store/static/css/main.f9dcd81b.chunk.css",
-    "main.js": "/meli-store/static/js/main.a77fa103.chunk.js",
-    "main.js.map": "/meli-store/static/js/main.a77fa103.chunk.js.map",
+    "main.js": "/meli-store/static/js/main.a2212942.chunk.js",
+    "main.js.map": "/meli-store/static/js/main.a2212942.chunk.js.map",
     "runtime-main.js": "/meli-store/static/js/runtime-main.ded4be8e.js",
     "runtime-main.js.map": "/meli-store/static/js/runtime-main.ded4be8e.js.map",
     "static/js/2.222fc03c.chunk.js": "/meli-store/static/js/2.222fc03c.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.ded4be8e.js",
     "static/js/2.222fc03c.chunk.js",
     "static/css/main.f9dcd81b.chunk.css",
-    "static/js/main.a77fa103.chunk.js"
+    "static/js/main.a2212942.chunk.js"
   ]
 }
