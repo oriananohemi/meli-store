@@ -42,6 +42,8 @@ GET /api/items:id/description. Consultar el detalle de un producto, parrafo prop
 
 ## Demo del proyecto
 
+[Demo](https://oriananohemi.github.io/meli-store/)
+
 <img src="./src/assets/images/demo/demo1.png" alt="Demo pantalla principal"> 
 <img src="./src/assets/images/demo/demo2.png" alt="Demo pantalla de resultado"> 
 <img src="./src/assets/images/demo/demo3.png" alt="Demo pantalla de detalle"> 

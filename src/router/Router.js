@@ -9,7 +9,7 @@ import Details from '../pages/Details';
 import Results from '../pages/Results';
 
 const Router = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/meli-store/">
       <Header/>
       <Switch>
         <Route exact path="/"><Home /></Route>
