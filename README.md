@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Meli Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tienda virtual Meli, la interfaz fue realizada con [React](https://github.com/facebook/create-react-app), utilizando SCSS y se desarrollo un servidor con Express. Se utilizo la API publica de Mercado Libre
 
-## Available Scripts
+## Probar el proyecto en local
 
-In the project directory, you can run:
+$ git clone https://github.com/oriananohemi/meli-store
 
-### `yarn start`
+Siga los siguientes comandos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Para visualizar el frontend*
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+$ npm install
 
-### `yarn test`
+$ npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se abrira el proyecto en el http://localhost:3000
 
-### `yarn build`
+*Para utilizar el servidor*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ingrese a la carpeta server
+$ cd server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+$ npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ npm start
 
-### `yarn eject`
+Su servidor funcionara en el puerto 3200, pero es configurable.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Endpoints
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Los endpoints pueden ser consultados desde el frontend o desde una herramienta de testeo de peticiones como postman.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+GET /api/items?q=:query. Consultar una lista de productos dada una palabra clave
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+GET /api/items:id. Consultar la informacion de un producto.
 
-## Learn More
+GET /api/items:id/description. Consultar el detalle de un producto, parrafo propuesto por el vendedor para explicar las caracteristicas del producto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Demo del proyecto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./src/assets/images/demo/demo1.png" alt="Demo pantalla principal"> 
+<img src="./src/assets/images/demo/demo2.png" alt="Demo pantalla de resultado"> 
+<img src="./src/assets/images/demo/demo3.png" alt="Demo pantalla de detalle"> 

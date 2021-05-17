@@ -29,7 +29,9 @@
 }
 
 .article {
+    background-color: var(--white-light-color);
     text-align: center;
+    padding: var(--relative-size);
     margin: 0 auto;
     width: 80%;
     &__image {
