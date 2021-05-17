@@ -1,12 +1,14 @@
 # Meli Store
 
-Tienda virtual Meli, la interfaz fue realizada con [React](https://github.com/facebook/create-react-app), utilizando SCSS y se desarrollo un servidor con Express. Se utilizo la API publica de Mercado Libre
+Tienda virtual Meli, la interfaz fue realizada en [React](https://github.com/facebook/create-react-app), utilizando SCSS. Se desarrollo un servidor con Express y se utilizo la API publica de Mercado Libre
 
-## Probar el proyecto en local
+## Proyecto en local
+
+Para probar el proyecto en local, primero clone este repositorio
 
 $ git clone https://github.com/oriananohemi/meli-store
 
-Siga los siguientes comandos
+Abra el proyecto dentro de la terminal de su preferencia, luego siga los siguientes comandos
 
 *Para visualizar el frontend*
 
@@ -19,7 +21,7 @@ Se abrira el proyecto en el http://localhost:3000
 *Para utilizar el servidor*
 
 La aplicacion esta conectada a un backend deployado en [Heroku](https://sleepy-beyond-89154.herokuapp.com/).En caso de que desee probar el backend en local,
-ingrese a la carpeta services y en el archivo requestHandler.js cambie la url por http://localhost:3200/api/items y siga los siguientes comandos.
+ingrese a la carpeta services del front y en el archivo requestHandler.js cambie la url por http://localhost:3200/api/items y siga los siguientes comandos.
 
 Ingrese a la carpeta server
 $ cd server
@@ -28,7 +30,7 @@ $ npm install
 
 $ npm start
 
-Su servidor funcionara en el puerto 3200, pero es configurable.
+Su servidor funcionara en el puerto 3200, dicho puerto es configurable.
 
 ## Endpoints
 
