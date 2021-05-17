@@ -6,13 +6,17 @@ import search from '../assets/images/search.png';
 
 const Header = () => {
     const history = useHistory()
+    let input 
+
+    const inputClear = () => {
+        input.value = ''
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let input = e.target["query"];
+        input = e.target["query"];
         if(input.value !== '') {
             const url = `/items?seach=${input.value}`;
-            input.value = ''
             history.push(url);
         }
     }
