@@ -1,0 +1,25 @@
+.not-found-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.item {
+    border: .05px solid rgba(0,0, 0, .1);
+    margin: var(--relative-size) 0;
+    &__image {
+        border-radius: 4px;
+        height: var(--images-small-size);
+        margin: var(--relative-size);
+        width: var(--images-small-size);
+    }
+    &__title {
+        font-size: var(--subtitle-size);
+        margin: calc(2 * var(--relative-size)) 0;
+    }
+}
