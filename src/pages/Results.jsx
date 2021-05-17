@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import Items from '../components/Items';
 import { getArticlesList } from '../services/requestHandler';
 
 const Results = () => {
-    const keyword = window.location.search.split('=')[1]
+    const location = useLocation();
     const [articlesList, setArticlesList] = useState([])
 
     useEffect(() => {
-        console.log(keyword)
-        getArticlesList(keyword)
+        const searchValue = location.search.split('=')[1];
+        getArticlesList(searchValue)
         .then(articles => setArticlesList(articles.body.items))
-    }, [keyword])
+    }, [location])
 
     return (
         <section>

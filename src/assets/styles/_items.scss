@@ -11,7 +11,10 @@
 
 .item {
     border: .05px solid rgba(0,0, 0, .1);
-    margin: var(--relative-size) 0;
+    margin: var(--relative-size) auto;
+    text-align: center;
+    padding: var(--relative-size);
+    width: 80%;
     &__image {
         border-radius: 4px;
         height: var(--images-small-size);
@@ -22,4 +25,19 @@
         font-size: var(--subtitle-size);
         margin: calc(2 * var(--relative-size)) 0;
     }
+}
+
+@media (min-width: 700px) {
+    .information-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .item {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: var(--relative-size) auto;
+        width: 80%;
+    }    
 }
