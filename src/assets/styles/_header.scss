@@ -3,10 +3,10 @@
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
+    padding: var(--relative-size);
     &__search-container {
         height: 40px;
-        margin-left: 20px;
+        margin-left: var(--relative-size);
     }
     &__search {
         background-color: var(--white-color);
@@ -14,14 +14,14 @@
         border-bottom-right-radius: 3px;
         border-top-right-radius: 3px;
         height: 100%;
-        padding: 10px;
+        padding: var(--relative-size);
     }
     &__input{
         border-bottom-left-radius: 3px;
         border-top-left-radius: 3px;
         border: none;
         height: 100%;
-        padding: 5px 10px;
+        padding: var(--relative-size);
         width: 100%;
     }
 }
