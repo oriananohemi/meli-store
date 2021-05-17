@@ -18,6 +18,9 @@ Se abrira el proyecto en el http://localhost:3000
 
 *Para utilizar el servidor*
 
+La aplicacion esta conectada a un backend deployado en [Heroku](https://sleepy-beyond-89154.herokuapp.com/).En caso de que desee probar el backend en local,
+ingrese a la carpeta services y en el archivo requestHandler.js cambie la url por http://localhost:3200/api/items y siga los siguientes comandos.
+
 Ingrese a la carpeta server
 $ cd server
 
