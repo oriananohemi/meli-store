@@ -1,7 +1,6 @@
 const url = 'https://sleepy-beyond-89154.herokuapp.com/api/items';
 
 const getArticlesList = (keyword) => {
-  console.log(keyword)
   return fetch(`${url}?q=${keyword}`, { method: 'get' })
   .catch(error => console.error(error))
   .then(data => data.json())
