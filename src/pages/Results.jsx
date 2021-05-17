@@ -11,11 +11,7 @@ const Results = () => {
     useEffect(() => {
         const searchValue = location.search.split('=')[1];
         getArticlesList(searchValue)
-        .then(articles => 
-            {
-                console.log(articles.body.categories)
-                setArticlesList(articles.body)
-            })
+        .then(articles => setArticlesList(articles.body))
     }, [location])
 
     return (

@@ -8,7 +8,6 @@ const Details = () => {
     const [article, setArticle] = useState(undefined)
     useEffect(() => {
         const searchValue = location.pathname.split('items')[1];
-        console.log(searchValue)
         getArticle(searchValue)
         .then(article => setArticle(article.body.item))
     }, [location])
