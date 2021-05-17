@@ -20,8 +20,8 @@ const Results = () => {
                 articlesList?.length > 0  ? 
                     <div>
                         {
-                            articlesList.map((item) => 
-                                <Items key={item.id} {...item} />
+                            articlesList.slice(0,4).map((item) => 
+                            <Items key={item.id} {...item} />
                             )
                         }
                     </div>
