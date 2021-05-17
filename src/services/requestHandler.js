@@ -1,4 +1,4 @@
-const url = 'http://localhost:3200/api/items';
+const url = 'https://sleepy-beyond-89154.herokuapp.com/api/items';
 
 const getArticlesList = (keyword) => {
   console.log(keyword)
