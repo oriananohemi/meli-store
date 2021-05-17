@@ -1,0 +1,22 @@
+.hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    margin: 32px;
+    &__title {
+      font-size: var(--title-big-size);
+    }
+    &__image {
+      margin: calc(2 * var(--relative-size));
+      width: 80%;
+    }
+  
+    @media (min-width: 1200px) {
+      .hero__image {
+        width: 50%;
+      }
+    }
+  }
