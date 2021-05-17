@@ -54,6 +54,7 @@ const getArticlesByQuery = (keyword) => {
                         amount: article.price,
                         decimals: 0
                     },
+                    address: article.address.state_name,
                     picture: article.thumbnail,
                     condition: article.condition,
                     free_shipping: article.shipping.free_shipping
