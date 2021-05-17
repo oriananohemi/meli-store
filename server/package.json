@@ -4,6 +4,7 @@
   "description": "request handler for Meli Store",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Oriana Reina <oriana.nohemi22@gmail.com>",
@@ -12,5 +13,8 @@
     "cors": "^2.8.5",
     "express": "4.17.1",
     "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
